@@ -117,7 +117,7 @@ def SendCommand(command):
     SUBPATH = ''
   KODI = os.getenv('KODI_ADDRESS')
   if not KODI or KODI == 'None':
-    KODI = '127.0.0.1'
+    KODI = '69.203.79.152'
   PORT = os.getenv('KODI_PORT')
   if not PORT or PORT == 'None':
     PORT = '8080'
@@ -126,7 +126,7 @@ def SendCommand(command):
     USER = 'kodi'
   PASS = os.getenv('KODI_PASSWORD')
   if not PASS or PASS == 'None':
-    PASS = 'kodi'
+    PASS = '1234'
 
   # Join the environment variables into a url
   url = "%s://%s:%s/%s/%s" % (SCHEME, KODI, PORT, SUBPATH, 'jsonrpc')
