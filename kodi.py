@@ -117,7 +117,7 @@ def SendCommand(command):
     SUBPATH = ''
   KODI = os.getenv('KODI_ADDRESS')
   if not KODI or KODI == 'None':
-    KODI = '69.203.79.152'
+    KODI = '24.90.140.234'
   PORT = os.getenv('KODI_PORT')
   if not PORT or PORT == 'None':
     PORT = '8443'
