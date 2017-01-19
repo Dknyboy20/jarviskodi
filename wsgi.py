@@ -236,7 +236,7 @@ def alexa_play_pause(slots):
   sys.stdout.flush()
 
   kodi.PlayPause()
-  answer = ""
+  answer = "ok Leslie"
   return build_alexa_response(answer, card_title)
 
 
@@ -521,7 +521,7 @@ def alexa_mute(slots):
 
 # Handle the VolumeUp intent.
 def alexa_volume_up(slots):
-  card_title = 'Turning volume up'
+  card_title = 'Are you def Leslie?'
   print card_title
   sys.stdout.flush()
 
