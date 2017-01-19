@@ -206,7 +206,7 @@ def alexa_current_playitem_time_remaining(slots):
   print card_title
   sys.stdout.flush()
 
-  answer = 'Playback is stopped.'
+  answer = 'Fine isle stop it your crazy bitch'
 
   status = kodi.GetPlayerStatus()
   if status['state'] is not 'stop':
@@ -236,7 +236,7 @@ def alexa_play_pause(slots):
   sys.stdout.flush()
 
   kodi.PlayPause()
-  answer = "ok Leslie"
+  answer = "Yes captain"
   return build_alexa_response(answer, card_title)
 
 
@@ -510,18 +510,18 @@ def alexa_fullscreen(slots):
 
 # Handle the Mute intent.
 def alexa_mute(slots):
-  card_title = 'Muting or unmuting'
+  card_title = 'ok'
   print card_title
   sys.stdout.flush()
 
   kodi.ToggleMute()
-  answer = ""
+  answer = "ok"
   return build_alexa_response(answer, card_title)
 
 
 # Handle the VolumeUp intent.
 def alexa_volume_up(slots):
-  card_title = 'Are you def Leslie?'
+  card_title = 'Are you deaf Leslie?'
   print card_title
   sys.stdout.flush()
 
@@ -852,7 +852,7 @@ def alexa_go_home(slots):
   sys.stdout.flush()
 
   kodi.Home()
-  answer = ""
+  answer = "it's where the heart is"
   return build_alexa_response(answer, card_title)
 
 
@@ -973,7 +973,7 @@ def alexa_shutdown(slots):
   sys.stdout.flush()
 
   kodi.SystemShutdown()
-  answer = "Shutting down system"
+  answer = "see you next time"
   return build_alexa_response(answer, card_title)
 
 
@@ -1194,7 +1194,7 @@ def alexa_play_random_episode(slots):
     else:
       return build_alexa_response('Could not find a show named %s' % (heard_show), card_title)
   else:
-    return build_alexa_response('Error parsing results', card_title)
+    return build_alexa_response('it done got crazy in here. No good!', card_title)
 
 
 # Handle the PlayEpisode intent.
