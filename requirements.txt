@@ -4,4 +4,4 @@ yaep
 pycountry
 pytz
 fuzzywuzzy
-python-Levenshtei
+python-Levenshtein
