@@ -236,7 +236,7 @@ def alexa_play_pause(slots):
   sys.stdout.flush()
 
   kodi.PlayPause()
-  answer = "Yes captain"
+  answer = "OK Leslie"
   return build_alexa_response(answer, card_title)
 
 
